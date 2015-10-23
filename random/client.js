@@ -33,7 +33,7 @@ module.exports = function(stdlib, foreign, heap) {
     var i = 0;
 
     for(i = 0; (i|0) < (length|0); i = (i + 1)|0) {
-      array[i >> 0] = ~~(min + (max - min + 1.0) * random());
+      array[i >> 0] = ~~(min + (max - min + 1.0) * (+random()));
     }
 
     return;
