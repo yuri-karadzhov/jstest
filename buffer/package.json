@@ -1,0 +1,22 @@
+{
+  "name": "jstest",
+  "version": "1.0.0",
+  "description": "Test cases for hqjs repository (focused on asmjs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuri-karadzhov/jstest.git"
+  },
+  "author": "Yuri Karadzhov <yuri.karadzhov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuri-karadzhov/jstest/issues"
+  },
+  "homepage": "https://github.com/yuri-karadzhov/jstest#readme",
+  "dependencies": {
+    "performance-now": "^0.2.0"
+  }
+}
