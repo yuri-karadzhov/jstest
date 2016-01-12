@@ -14,8 +14,8 @@ var sizes = {
 
 var repeat = 100;
 
-// Array set
-console.log('Set:');
+// Array for of
+console.log('For-of:');
 
 function copy(size) {
   var total = 0;
@@ -26,7 +26,11 @@ function copy(size) {
     var arr = new Int8Array(size);
     for(var j = size; j < size; j++) arr[j] = ~~(-128 + 255 * Math.random());
     var time = now();
-    view.set(arr);
+    var index = 0;
+    for(var el of arr) {
+      view[index] = el;
+      index++;
+    }
     keep[i] = view;
     total += now() - time;
   }

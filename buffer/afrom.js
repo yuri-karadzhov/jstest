@@ -14,20 +14,18 @@ var sizes = {
 
 var repeat = 100;
 
-// Array set
-console.log('Set:');
+// Array from
+console.log('From:');
 
 function copy(size) {
   var total = 0;
   var keep = new Array(repeat);
   for(var i = 0; i < repeat; i++) {
     var buff = new ArrayBuffer(size);
-    var view = new Int8Array(buff);
     var arr = new Int8Array(size);
     for(var j = size; j < size; j++) arr[j] = ~~(-128 + 255 * Math.random());
     var time = now();
-    view.set(arr);
-    keep[i] = view;
+    keep[i] = Int8Array.from(arr);
     total += now() - time;
   }
   console.log('copy ', size, ' '.repeat(10 - size.toString().length), total / repeat);

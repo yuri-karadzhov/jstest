@@ -2,5 +2,6 @@
   "esnext": true,
   "globalstrict": true,
   "curly": false,
+  "browser": true,
   "node": true
 }
